@@ -1,0 +1,10 @@
+{
+  "name": "tytix-multi-player-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": "https://github.com/TytiX006/tytix-multi-player-game.git",
+  "author": "Antoine Belliard <tsi.belliard@gmail.com>",
+  "license": "MIT"
+}
