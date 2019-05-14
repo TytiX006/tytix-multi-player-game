@@ -11,7 +11,9 @@
   "author": "Antoine Belliard <tsi.belliard@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
