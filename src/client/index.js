@@ -10,7 +10,7 @@ let app = new PIXI.Application({
   width: 800,         // default: 800
   height: 600,        // default: 600
   antialias: true,    // default: false
-  transparent: true, // default: false
+  transparent: false, // default: false
   resolution: 1       // default: 1
 });
 
@@ -18,7 +18,7 @@ let app = new PIXI.Application({
 // can then insert into the DOM
 document.body.appendChild(app.view);
 
-let socket = io();
+let socket = io(__SOCKET_URL__ || window.location);
 
 socket.on('error', (error) => {
   console.log(error);
