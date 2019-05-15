@@ -1,3 +1,5 @@
+import GameInstance from './gameinstance';
+
 
 export default class GameServer {
   
@@ -16,5 +18,7 @@ export default class GameServer {
   }
 
   run() {
+    console.log('Game server is running');
+    new GameInstance();
   }
 }
