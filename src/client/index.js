@@ -1,6 +1,7 @@
 import * as PIXI from 'pixi.js';
 
-import socketIO from 'socket.io-client';
+import io from 'socket.io-client';
+
 
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
@@ -17,4 +18,8 @@ let app = new PIXI.Application({
 // can then insert into the DOM
 document.body.appendChild(app.view);
 
-let socket = socketIO();
+let socket = io();
+
+socket.on('error', (error) => {
+  console.log(error);
+});
