@@ -1,6 +1,6 @@
 import path from 'path';
 import express from 'express';
-import Server from 'http';
+import {Server} from 'http';
 import socketIO from 'socket.io';
 import GameServer from './gameserver';
 
