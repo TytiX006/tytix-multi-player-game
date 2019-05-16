@@ -15,8 +15,16 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, './dist/client'),
       filename: 'webpack.client.bundle.js'
     },
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+        },
+      ],
+    },
     plugins: [
-      new HtmlWebpackPlugin(),
+      new HtmlWebpackPlugin({template: './src/client/index.html'}),
       new webpack.DefinePlugin({
         __SOCKET_URL__: socketUrl
       })
