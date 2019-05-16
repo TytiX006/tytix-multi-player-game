@@ -19,7 +19,7 @@ import io from 'socket.io-client';
 // can then insert into the DOM
 //document.body.appendChild(app.view);
 
-let socket = io(__SOCKET_URL__ || window.location);
+let socket = io(__SOCKET_URL__ || window.location.href);
 
 socket.on('error', (error) => {
   console.log(error);
