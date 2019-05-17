@@ -15,6 +15,11 @@ module.exports = (env, argv) => {
       path: path.resolve(__dirname, './dist/client'),
       filename: 'webpack.client.bundle.js'
     },
+    resolve: {
+      alias: {
+        'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+      }
+    },
     module: {
       rules: [
         {

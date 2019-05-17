@@ -3,3 +3,8 @@ html, body {
   padding: 0;
   cursor: crosshair;
 }
+
+#hud {
+  position: absolute;
+  color: white;
+}

@@ -2,6 +2,7 @@ import css from './style.css';
 
 import * as PIXI from 'pixi.js';
 import io from 'socket.io-client';
+import Vue from 'vue';
 
 
 // The application will create a renderer using WebGL, if possible,
@@ -42,3 +43,10 @@ setupCanvas();
 window.onresize = function() {
   game.resizeRender();
 };
+
+var hud = new Vue({ 
+  el: '#hud',
+  data: {
+      message: 'Hello Vue!'
+  }
+});
